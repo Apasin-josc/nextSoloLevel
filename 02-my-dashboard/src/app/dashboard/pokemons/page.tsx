@@ -1,6 +1,6 @@
 import { SimplePokemon, PokemonsResponse, PokemonGrid } from "@/pokemons";
 
-//! mr is the snipper for creating metadata
+//! <mr> is the snipper for creating metadata
 export const metadata = {
   title: '151 Pokemons List',
   description: 'Pokemons List',
@@ -28,7 +28,7 @@ export default async function PokemonsPage() {
   const pokemons = await getPokemons(151);
   return (
     <div className="flex flex-col">
-      <span className="text-5xl my-2">Pokemon List <small>static</small></span>
+      <span className="text-5xl my-2">Pokemon List <small className="text-blue-500">static</small></span>
       <PokemonGrid pokemons={pokemons} />
     </div>
   );
