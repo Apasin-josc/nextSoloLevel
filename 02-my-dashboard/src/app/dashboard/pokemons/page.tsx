@@ -1,5 +1,11 @@
 import { SimplePokemon, PokemonsResponse, PokemonGrid } from "@/pokemons";
 
+//! mr is the snipper for creating metadata
+export const metadata = {
+  title: '151 Pokemons List',
+  description: 'Pokemons List',
+};
+
 const getPokemons = async (
   limit = 20,
   offset = 0
