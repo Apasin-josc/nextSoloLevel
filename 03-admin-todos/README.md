@@ -22,10 +22,23 @@ steps to work with development
 docker compose up -d
 ```
 
+2. rename the .env.template to .env
+3. replace the .env variables
+4. execute the command `npm install`
+5. execute the command of `npm run dev`
+6. execute the commands of prisma
+
+```
+npx prisma migrate dev
+npx prisma generate
+```
+
+7. execute the SEED [to create the db local](localhost:3000/api/seed)
+
 # What's Primsa
 
 Primsa is an open_source next-generation ORM:
-*Primsa Clinet
+*Prisma Client
 *Prisma Migrate
 \*Prisma Studio
 
@@ -37,15 +50,11 @@ basic commands:
 -> npm install @prisma/client
 -> prisma generate
 
-2. rename the .env.template to .env
-3. replace the .env variables
-4. execute the SEED [to create the db local](localhost:3000/api/seed)
-
 npx prisma migrate dev
 npx prisma generate
 
 ```
-YUP
+##YUP##
 npm install yup
 ```
 
